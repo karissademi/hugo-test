@@ -4,7 +4,7 @@ layoutDir: "layouts"
 publishDir: "public"
 indexes:
   category: "categories"
-baseURL: "http://karissademi.github.io/hugo-test"
+baseURL: "https://karissademi.github.io/hugo-test"
 title: "My first Hugo site"
 canonifyURLs: true
 theme: "test-theme"
