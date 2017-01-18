@@ -12,10 +12,10 @@ env:
     - DEPLOY_BRANCH="gh-pages"
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_72fc027b4cf8_key -iv $encrypted_72fc027b4cf8_iv
-    -in github.enc -out github -d
+  - openssl aes-256-cbc -K $encrypted_72fc027b4cf8_key -iv $encrypted_72fc027b4cf8_iv -in github.enc -out github -d
 
 before_script:
+  - go get -u -v github.com/spf13/hugo
   - chmod +x ./scripts/deploy.sh
 
 script:
