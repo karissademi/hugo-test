@@ -8,5 +8,3 @@ baseURL: "http://karissademi.github.io/hugo-test"
 title: "My first Hugo site"
 canonifyURLs: true
 theme: "test-theme"
-
-...
