@@ -7,7 +7,7 @@ env:
   global:
     - SSH_KEY="github"
     - GIT_NAME="Karissa Demi"
-    - GIT_EMAIL="romancoedo@gmail.com"
+    - GIT_EMAIL="k@karissademi.com"
     - SOURCE_DIR="public"
     - DEPLOY_BRANCH="gh-pages"
 
