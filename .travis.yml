@@ -1,0 +1,25 @@
+language: go
+
+go:
+  master
+
+env:
+  global:
+    - SSH_KEY="github"
+    - GIT_NAME="Karissa Demi"
+    - GIT_EMAIL="romancoedo@gmail.com"
+    - SOURCE_DIR="public"
+    - DEPLOY_BRANCH="gh-pages"
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_72fc027b4cf8_key -iv $encrypted_72fc027b4cf8_iv
+  -in github.enc -out github -d
+
+before_script:
+  - chmod +x ./scripts/deploy.sh
+
+script:
+  - hugo
+
+after_success:
+  - ./scripts/deploy.sh
